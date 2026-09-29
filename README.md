@@ -19,19 +19,19 @@ G/ Designed for future tools, automation, sensors, and hardware
 
 ## Current Components
 
-A Speech Recognition
+**A Speech Recognition**
 
 GABO currently uses **faster-whisper** for speech-to-text.
 
 The project is designed to work with lightweight Whisper models so that speech recognition can run on relatively modest hardware.
 
-B Wake Word Detection
+**B Wake Word Detection**
 
 Wake-word detection is handled with **OpenWakeWord**.
 
 The system can detect supported wake phrases and activate GABO when the assistant is addressed.
 
-C Language Model
+**C Language Model**
 
 GABO supports local LLM inference through Ollama.
 
@@ -39,7 +39,7 @@ The development setup currently uses a lightweight model suitable for running on
 
 Cloud-based models can also be integrated when additional capability is useful.
 
-Text-to-Speech
+**D Text-to-Speech**
 
 GABO uses Piper for local text-to-speech.
 
@@ -52,7 +52,7 @@ The project is being developed with relatively modest hardware in mind.
 
 A major goal is to keep the assistant lightweight enough to run locally rather than requiring a powerful GPU or permanent cloud connection.
 
-Example Commands
+# **Example Commands**
 
 The eventual goal is for commands such as:
 
@@ -66,7 +66,7 @@ to trigger actual tools or hardware actions.
 
 At the moment, many of these capabilities are still experimental.
 
-Project Structure
+## **Project Structure**
 GABO/
 ├── main.py
 ├── audio-stt.py
@@ -78,8 +78,8 @@ GABO/
 
 The project structure is still evolving as GABO's architecture develops.
 
-Installation
-Requirements
+## **Installation**
+**Requirements**
 Windows
 Python 3.12+
 Git
@@ -93,7 +93,7 @@ cd GABO
 Create a virtual environment
 python -m venv .venv
 
-Activate it:
+**Activate it:**
 
 .venv\Scripts\Activate.ps1
 
@@ -101,7 +101,7 @@ Then install the required Python packages.
 
 Dependency installation and configuration are still being standardized, so expect some manual setup during the current development stage.
 
-Development
+## **Development**
 
 GABO is currently a personal experimental project.
 
@@ -113,7 +113,8 @@ Wake → Listen → Understand → Think → Respond → Speak
 
 After that, the plan is to expand GABO's ability to interact with the world through tools and hardware.
 
-Roadmap
+## **Roadmap**
+
 Voice
 
 Wake-word detection
@@ -164,17 +165,13 @@ Robotics integration
 
 Physical GABO interface
 
-Philosophy
+## **Philosophy**
 
 GABO is intended to be a useful assistant, not a digital companion.
 
 The goal is practical interaction: give it a command, let it figure out what needs to happen, and have it do the job.
 
 Ideally, the assistant should feel less like a chatbot and more like a capable piece of software that happens to have a voice.
-
-License
-
-License information will be added as the project develops.
 
 GABO is a work in progress.
 
